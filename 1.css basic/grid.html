@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Property</title>
+    <style>
+      main {
+        width: 90%;
+        margin: 50px auto;
+        /* border: 1px solid #000; */
+        color: rgb(185, 106, 106);
+        display: grid;
+        grid-template-rows: 80px 180px 380px 80px;
+        grid-template-columns: repeat(3, 1fr) 80px;
+        grid-gap: 10px;
+      }
+      .header {
+        background-color: rgb(74, 148, 136);
+        grid-column: 1/5;
+        /* grid-column-end: 5;
+        grid-column-start:1;*/
+      }
+      .card1 {
+        background-color: rgb(179, 79, 149);
+      }
+      .card2 {
+        background-color: rgb(179, 79, 149);
+      }
+      .card3 {
+        background-color: rgb(179, 79, 149);
+      }
+      .sidebar {
+        background-color: rgb(99, 216, 216);
+        grid-row: 2/4;
+        grid-column: 4/5;
+      }
+      .main-content {
+        background-color: rgb(59, 131, 119);
+        grid-column: 1/4;
+      }
+      .footer {
+        background-color: rgb(221, 148, 11);
+        grid-column: 1/5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="header"></div>
+      <dic class="card1"></dic>
+      <div class="card2"></div>
+      <div class="card3"></div>
+      <div class="sidebar"></div>
+      <div class="main-content"></div>
+      <div class="footer"></div>
+    </main>
+  </body>
+</html>
